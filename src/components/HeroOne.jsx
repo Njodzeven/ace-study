@@ -16,7 +16,7 @@ const HeroOne = () => {
               Study Habits
             </h1>
             <div className="hero__contact cxufadeUp2">
-              <Link to="/contact">
+              <Link to="/">
                 <span>
                   <i className="fa-solid fa-arrow-right" />
                 </span>
@@ -29,7 +29,7 @@ const HeroOne = () => {
           <div className="hero__btm">
             <div className="cxufadeUp2">
               <p className="sec-title">
-              Unlock your learning potential with better study habits{" "}
+              Unlock your learning potential with better study habits
               </p>
             </div>
           </div>

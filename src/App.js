@@ -16,6 +16,8 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import ContactPage from "./pages/ContactPage";
 import UserProfile from "./pages/UserProfile";
+import SignIn from "./components/SignInOne";
+import SignUp from "./components/SignUpOne";
 
 function App() {
   useEffect(() => {
@@ -31,6 +33,8 @@ function App() {
     <BrowserRouter>
       <RouteScrollToTop />
       <Routes>
+        <Route exact path="/sign-up" element={<SignUp />} />
+        <Route exact path="/sign-in" element={<SignIn />} />
         <Route exact path="/" element={<HomeOne />} />
         <Route exact path="/index-2" element={<HomeTwo />} />
         <Route exact path="/index-3" element={<HomeThree />} />

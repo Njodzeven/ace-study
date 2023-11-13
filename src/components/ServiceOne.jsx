@@ -38,27 +38,12 @@ const ServiceOne = () => {
                 </div>
                 <div className="service__content">
                   <Link to="/service-details">
-                    <div className="service__title">
+                    <div className="service__title" data-aos="fade-up" data-aos-delay={500}>
                     Progress Tracking
                     </div>
                   </Link>
                   <p>
                   Monitor and celebrate your academic journey, visualizing improvements and setting new goals based on evolving study patterns and successes since sign-up.
-                  </p>
-                </div>
-                <div className="bell icon">
-                  <span>
-                    <i className="fas fa-bell" />
-                  </span>
-                </div>
-                <div className="service__content">
-                  <Link to="/service-details">
-                    <div className="service__title">
-                      Reminder
-                    </div>
-                  </Link>
-                  <p>
-                  Stay organized effortlessly by setting personalized reminders for assignments, exams, and events, ensuring you never miss a crucial deadline.
                   </p>
                 </div>
               </div>
@@ -67,7 +52,7 @@ const ServiceOne = () => {
               <div
                 className="service__item"
                 data-aos="fade-up"
-                data-aos-delay={1000}
+                data-aos-delay={500}
               >
                 <div className="bell icon">
                   <span>
@@ -88,7 +73,31 @@ const ServiceOne = () => {
               <div
                 className="service__item"
                 data-aos="fade-up"
-                data-aos-delay={1000}
+                data-aos-delay={500}
+              >
+                <div className="bell icon">
+                  <span>
+                    <i className="fas fa-bell" />
+                  </span>
+                </div>
+                <div className="service__content">
+                  <Link to="/service-details">
+                    <div className="service__title" data-aos="fade-up" data-aos-delay={500}>
+                      Reminder
+                    </div>
+                  </Link>
+                  <p>
+                  Stay organized effortlessly by setting personalized reminders for assignments, exams, and events, ensuring you never miss a crucial deadline.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xxl-4 col-xl-4 col-xl-4 col-md-4">
+              <div
+                className="service__item"
+                data-aos="fade-up"
+                data-aos-delay={500}
               >
                 <div className="bell icon">
                   <span>

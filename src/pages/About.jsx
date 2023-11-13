@@ -15,7 +15,7 @@ const About = () => {
       <Suspense fallback={<Preloader />}>
         <HeaderOne />
         <main>
-          <Breadcrumb title="About US" />
+          <Breadcrumb title="Study Tips" />
           <AboutTwo />
           <CounterTwo />
           <WhoWeAreTwo />

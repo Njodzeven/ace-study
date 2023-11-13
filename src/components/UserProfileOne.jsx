@@ -13,7 +13,7 @@ const UserProfileOne = () => {
                 <div class="profile-content-left profile-left-spacing pt-5 pb-3 px-3 px-xl-5">
                     <div class="card text-center widget-profile px-0 border-0">
                     <div class="card-img mx-auto rounded-circle">
-                        <img src="public\assets\imgs\sleek_img\user\u6.jpg" alt="user image"/>
+                        <img src="public\assets\imgs\users\user.jpg" alt="user image"/>
                     </div>
 
                     <div class="card-body">
