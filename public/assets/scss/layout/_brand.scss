@@ -1,0 +1,29 @@
+.brand {
+  &__inner {
+    padding-left: 150px;
+    padding-right: 150px;
+
+    @media #{$xl} {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+
+    @media #{$lg} {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  &__slider {
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+      transition-timing-function: linear;
+    }
+  }
+
+  &__slide {
+    text-align: center;
+    margin: 0 50px;
+  }
+}

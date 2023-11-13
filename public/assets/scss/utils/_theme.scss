@@ -1,0 +1,233 @@
+/*----------------------------------------*/
+/* 04. THEME CSS START
+/*----------------------------------------*/
+
+.pos-abs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+
+  &-2 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+  }
+
+  &-3 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+  }
+
+  &-4 {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+  }
+
+  &-5 {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+  }
+}
+
+.db-color {
+  &-secondary {
+    color: var(--secondary) !important;
+  }
+
+  &-yellow-2 {
+    color: var(--yellow-2) !important;
+  }
+}
+
+.db-bg {
+  &-secondary {
+    background-color: var(--secondary) !important;
+  }
+}
+
+.project-completed {
+  width: 260px;
+  height: 260px;
+  background: var(--gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 100%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 1px dashed var(--primary);
+    animation: dbRotate 5s infinite;
+  }
+
+  img {
+    margin-bottom: 5px;
+  }
+
+  .total {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    color: var(--black-2);
+    padding-bottom: 5px;
+  }
+}
+
+.satisfy-clients {
+  width: 280px;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: var(--yellow);
+
+  img {
+    margin-bottom: 30px;
+
+    @media #{$md} {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    color: var(--secondary);
+    text-transform: uppercase;
+
+    @media #{$md} {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    padding-top: 15px;
+    color: var(--secondary);
+  }
+}
+
+.line-cols {
+  &-3 {
+    position: relative;
+
+    .line {
+      &-1 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 25%;
+        top: 0;
+        background-color: var(--blue);
+      }
+
+      &-2 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        background-color: var(--blue);
+      }
+
+      &-3 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 75%;
+        top: 0;
+        background-color: var(--blue);
+      }
+    }
+  }
+}
+
+// Scroll Top
+.scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    to top,
+    var(--primary) 0%,
+    var(--secondary) 25%,
+    var(--primary) 50%,
+    var(--secondary) 75%,
+    var(--primary) 100%
+  );
+  background-size: 400% 400%;
+  right: 20px;
+  bottom: 0;
+  font-size: 18px;
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s;
+
+  &.showed {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+    background-position: 100% 100%;
+  }
+}
+
+.img-animation {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+
+  @media #{$xl} {
+    height: 500px;
+  }
+  @media #{$md} {
+    height: auto;
+  }
+
+  img {
+    position: absolute;
+    height: 120%;
+    bottom: 0;
+    object-fit: cover;
+
+    @media #{$md} {
+      position: static;
+      height: auto;
+    }
+  }
+}

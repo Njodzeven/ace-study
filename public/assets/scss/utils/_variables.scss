@@ -1,0 +1,99 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Digibold - Digital Agency HTML5 Template
+  Author: s7template
+  Support: 
+  Description: Digibold – is a Digital Agency HTML5 Template that comes with high-quality 3 Pre build Home Pages and many built-in awesome inner pages  which are perfect for any creative agencies, designers, digital agencies, freelancers, developers, designers, marketing, startup, blog and portfolio.
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+  01. VARIBALES DECLARARION
+  02. MIXIN DECLARATION
+  03. TYPOGRAPHY CSS START
+  04. THEME CSS START
+  05. BUTTON CSS START
+  06. TITLE CSS START
+  07. WIDGET CSS START
+  08. ANIMATION CSS START
+  09. LOADING CSS START
+  10. MENU CSS START
+  11. MODAL CSS START
+  12. HEADER CSS START
+  13. OFFCANVAS CSS START
+  14. HERO CSS START
+  15. FEATURE CSS START
+  16. ABOUT CSS START
+  17. SERVICE CSS START
+  18. COUNTER CSS START
+  19. TESTIMONIAL CSS START
+  20. PROCESS CSS START
+  21. TEAM CSS START
+  22. PORTFOLIO CSS START
+  23. HIRE CSS START
+  24. PRICE CSS START
+  25. BRAND CSS START
+  26. BLOG CSS START
+  27. CONTACT CSS START
+  28. FOOTER CSS START
+  
+**********************************************/
+
+/*----------------------------------------*/
+/*  01. VARIBALES DECLARARION
+/*----------------------------------------*/
+:root {
+  // Colors
+  --primary: #41c1ef;
+  --secondary: #0e1e2a;
+
+  --white: #fff;
+  --white-2: #e3e3e3;
+
+  --black: #000;
+  --black-2: #252525;
+  --black-3: #1f242c;
+  --black-4: #67687a;
+  --black-5: #2b2b5e;
+
+  --gray: #616161;
+  --gray-2: #f4f5fa;
+  --gray-3: #333f4d;
+  --gray-4: #82828a;
+  --gray-5: #3c4958;
+  --gray-6: #757474;
+
+  --blue: #0058aa;
+  --blue-2: #064bb5;
+
+  --yellow: #b8fb5e;
+  --yellow-2: #d8ff36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Font Family
+$font_barlow: "Barlow", sans-serif;
+
+// Responsive Variable
+$xxxl: "(min-width: 1920px)";
+$xxl: "(max-width: 1919px)";
+$xl: "(max-width: 1399px)";
+$lg: "(max-width: 1199px)";
+$md: "(max-width: 991px)";
+$sm: "(max-width: 767px)";
+$xs: "(max-width: 574px)";

@@ -1,0 +1,38 @@
+.textslider {
+  &__area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--black-2);
+
+    @media #{$lg} {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 50px;
+
+    @media #{$xl} {
+      font-size: 80px;
+    }
+
+    @media #{$lg} {
+      font-size: 60px;
+    }
+
+    span {
+      color: var(--primary);
+    }
+  }
+}

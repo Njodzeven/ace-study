@@ -1,0 +1,259 @@
+.offcanvas-navigation {
+  margin-bottom: 20px;
+}
+
+.offcanvas-navigation > ul > li.menu-item-has-children > .sub-menu {
+  height: 0;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.offcanvas-navigation > ul > li.menu-item-has-children.active > .sub-menu {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.offcanvas-navigation > ul > li.menu-item-has-children.active > .sub-menu li a {
+  border-top: 1px solid #ebebeb;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.offcanvas-navigation ul.sub-menu {
+  transition: 0.3s;
+}
+
+.offcanvas-navigation ul li.menu-item-has-children {
+  display: block;
+  position: relative;
+}
+
+.offcanvas-navigation ul li.menu-item-has-children a {
+  display: block;
+}
+
+.offcanvas-navigation
+  ul
+  li.menu-item-has-children.active
+  > .menu-expand
+  svg:before {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.offcanvas-navigation ul li.menu-item-has-children .menu-expand {
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  left: auto;
+  line-height: 50px;
+  position: absolute;
+  right: 46px;
+  text-align: center;
+  top: 0;
+  width: 30px;
+}
+
+.offcanvas-navigation ul li.menu-item-has-children .menu-expand i {
+  border-bottom: 1px solid;
+  display: block;
+  font-weight: 700;
+  margin-top: 25px;
+  position: relative;
+  transition: all 0.25s ease-out;
+  width: 10px;
+}
+
+.offcanvas-navigation ul li.menu-item-has-children .menu-expand i:before {
+  border-bottom: 1px solid;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 100%;
+}
+
+.offcanvas-navigation ul li a {
+  border-top: 1px solid #ebebeb;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 14px 0;
+  width: 100%;
+}
+
+.offcanvas__area {
+  background: #0058aa;
+  background: var(--blue);
+  height: 100vh;
+  opacity: 0;
+  padding: 40px 30px;
+  position: fixed;
+  right: -400px;
+  top: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+  width: 400px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  .offcanvas__area {
+    right: -350px;
+    width: 350px;
+  }
+}
+
+.offcanvas__area.showed {
+  opacity: 1;
+  right: 0;
+  visibility: visible;
+}
+
+.offcanvas__top {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1399px) {
+  .offcanvas__top {
+    padding-bottom: 50px;
+  }
+}
+
+.offcanvas__top img {
+  height: -webkit-min-content;
+  height: min-content;
+  max-width: 160px;
+}
+
+.offcanvas__top button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--white-3);
+  border-radius: 50px;
+  color: #fff;
+  color: var(--white);
+  display: flex;
+  font-size: 18px;
+  height: 40px;
+  justify-content: center;
+  transition: all 0.3s;
+  width: 40px;
+}
+
+.offcanvas__top button:hover {
+  border-color: #22f55d;
+  border-color: var(--primary);
+  color: #22f55d;
+  color: var(--primary);
+}
+
+.offcanvas__menu {
+  display: none;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+  .offcanvas__menu {
+    display: block;
+    height: 75vh;
+    overflow: scroll;
+  }
+}
+
+.offcanvas-menu li a {
+  color: #fff;
+  color: var(--white);
+  display: block;
+  font-size: 15px;
+  padding: 7px 0;
+  text-transform: capitalize;
+}
+
+.offcanvas__map {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1919px) {
+  .offcanvas__map {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .offcanvas__map {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .offcanvas__map {
+    display: none;
+  }
+}
+
+.offcanvas__map iframe {
+  height: 220px;
+  width: 100%;
+}
+
+@media (max-width: 1399px) {
+  .offcanvas__map iframe {
+    height: 120px;
+  }
+}
+
+.offcanvas__search {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1399px) {
+  .offcanvas__search {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .offcanvas__search {
+    display: none;
+  }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.offcanvas__area,
+.offcanvas__menu {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+.offcanvas__area::-webkit-scrollbar,
+.offcanvas__menu::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}

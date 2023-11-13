@@ -1,0 +1,219 @@
+.faq {
+  &__area {
+    background-color: var(--black-2);
+    overflow: hidden;
+
+    .sec-subtitle {
+      margin-bottom: 30px;
+    }
+
+    &-3 {
+      position: relative;
+      background-color: var(--gray-2);
+
+      .shape {
+        position: absolute;
+        left: 0;
+        opacity: 0.3;
+        bottom: 0;
+        z-index: 0;
+      }
+    }
+  }
+
+  &__content {
+    @media #{$sm} {
+      padding-bottom: 50px;
+    }
+
+    .sec-title {
+      padding-top: 10px;
+    }
+
+    .sec-subtitle span {
+      -webkit-text-stroke: 1px var(--white);
+    }
+
+    p {
+      max-width: 425px;
+      color: var(--white);
+      margin-bottom: 80px;
+
+      @media #{$sm} {
+        margin-bottom: 50px;
+      }
+    }
+
+    &-3 {
+      position: relative;
+      z-index: 5;
+
+      @media #{$md} {
+        padding-bottom: 70px;
+      }
+
+      p {
+        max-width: 410px;
+        color: var(--black-4);
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__list {
+    .accordion {
+      &-body {
+        padding-top: 10px;
+
+        p {
+          color: var(--white-2);
+        }
+      }
+
+      &-item {
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: 1px solid var(--gray-3);
+        border-radius: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media #{$sm} {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-button {
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 500;
+        color: var(--white);
+        outline: none;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        padding-left: 60px;
+
+        &::after {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: var(--primary);
+          content: "+";
+          transform: unset;
+          border-radius: 100%;
+          text-align: center;
+          font-size: 24px;
+          line-height: 1.1;
+          left: 20px;
+        }
+
+        &:not(.collapsed)::after {
+          content: "-";
+        }
+      }
+    }
+
+    &-3 {
+      .accordion {
+        &-body {
+          padding: 0 60px 0 105px;
+
+          @media #{$lg} {
+            padding: 0 60px 0 75px;
+          }
+
+          @media #{$sm} {
+            padding: 0 30px 0 45px;
+          }
+
+          p {
+            color: var(--black-4);
+          }
+        }
+
+        &-item {
+          border: 0;
+          border-radius: 0;
+          padding: 30px;
+          background-color: transparent;
+          border-bottom: 1px solid var(--blue);
+
+          @media #{$lg} {
+            padding: 30px 15px;
+          }
+
+          @media #{$sm} {
+            padding: 20px 0;
+          }
+
+          &:first-child {
+            border-top: 1px solid var(--blue);
+          }
+        }
+
+        &-button {
+          font-size: 20px;
+          line-height: 1.3;
+          font-weight: 600;
+          color: var(--black-2);
+          outline: none;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          padding: 0;
+          gap: 60px;
+          padding-bottom: 10px;
+          padding-right: 35px;
+
+          @media #{$lg} {
+            gap: 30px;
+          }
+
+          @media #{$sm} {
+            gap: 15px;
+          }
+
+          &::after {
+            background: none;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            content: "\f107";
+            font-family: "Font Awesome 6 Free";
+            transform: unset;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--blue);
+            transition: all 0.3s;
+            right: 0;
+
+            @media #{$sm} {
+              font-size: 24px;
+            }
+          }
+
+          &:not(.collapsed)::after {
+            content: "\f106";
+          }
+
+          span {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 0.8;
+            color: transparent;
+            display: inline-block;
+            -webkit-text-stroke: 1px var(--black-2);
+
+            @media #{$sm} {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,273 @@
+.blog {
+  &__area {
+    .sec-title-wrap {
+      text-align: center;
+      padding-bottom: 40px;
+
+      @media #{$sm} {
+        padding-bottom: 30px;
+      }
+    }
+
+    .sec-subtitle {
+      margin-bottom: 25px;
+
+      span {
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -52%);
+      }
+    }
+
+    &-3 {
+      .sec-title-wrap {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+    }
+
+    &-4 {
+      // background-image: url(../imgs/blog/4/bg.png);
+      background-image: url("~/public/assets/imgs/blog/4/bg.png");
+
+      .sec-subtitle {
+        color: var(--blue-2);
+      }
+
+      .sec-title br {
+        @media #{$sm} {
+          display: none;
+        }
+      }
+
+      .db-btn-border {
+        i {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__top-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media #{$md} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$sm} {
+      gap: 50px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    a {
+      margin-top: 40px;
+      border-color: var(--primary);
+
+      @media #{$sm} {
+        margin-top: 25px;
+      }
+    }
+
+    &-3 {
+      a {
+        margin-top: 30px;
+        border-color: var(--black-2);
+
+        i {
+          color: var(--blue);
+        }
+      }
+    }
+
+    &-4 {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        z-index: -1;
+        background-color: var(--gray-2);
+      }
+
+      .db-btn-arrow {
+        margin-top: 30px;
+        border-color: var(--black-2);
+
+        i {
+          color: var(--blue);
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__content {
+    &-4 {
+      padding: 0 50px 50px;
+
+      @media #{$md} {
+        padding: 0 30px 40px;
+      }
+    }
+  }
+
+  &__meta {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    @media #{$md} {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    @media #{$sm} {
+      gap: 30px;
+      padding-bottom: 15px;
+    }
+
+    li {
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.9;
+        color: var(--black-4);
+
+        i {
+          padding-right: 5px;
+          color: var(--primary);
+        }
+      }
+    }
+
+    &-3 {
+      @extend .blog__meta;
+      padding-top: 25px;
+      padding-bottom: 15px;
+
+      li {
+        a {
+          i {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+
+    &-4 {
+      @extend .blog__meta;
+      gap: 20px;
+      padding-top: 25px;
+      padding-bottom: 15px;
+
+      li {
+        a {
+          i {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--black-2);
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--blue);
+    }
+
+    &-3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.3;
+      color: var(--gray-5);
+      padding-bottom: 20px;
+      transition: all 0.3s;
+      border-bottom: 1px solid var(--blue);
+
+      &:hover {
+        color: var(--blue);
+      }
+
+      @media #{$md} {
+        padding-bottom: 10px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__thumb {
+    position: relative;
+
+    .date {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.4;
+      color: var(--black-2);
+      position: absolute;
+      bottom: -37px;
+      right: 40px;
+      padding: 10px;
+      background-color: var(--primary);
+      text-align: center;
+
+      @media #{$md} {
+        right: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-3 {
+      @extend .blog__thumb;
+
+      .date {
+        background-color: var(--yellow);
+        bottom: unset;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &-4 {
+      padding-left: 50px;
+
+      @media #{$md} {
+        padding-left: 30px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
