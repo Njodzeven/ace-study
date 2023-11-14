@@ -1578,6 +1578,9 @@ img {
     grid-template-columns: auto 115px;
   }
 }
+.header__logo{
+  max-width: 10%;
+}
 .header__right-4 {
   height: 100%;
   display: -webkit-box;
