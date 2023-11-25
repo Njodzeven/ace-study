@@ -55,10 +55,10 @@ const SignUpOne = () => {
                                         I Agree the terms and conditions
                                     </label>
                                     </div>
-                                    <Link to="/">
+                                    <Link to="/home">
                                         <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign Up</button>
                                     </Link>
-                                    <Link to = "SignIn">
+                                    <Link to = "/sign-in">
                                         <p>Already have an account?
                                         <a class="text-blue" href="sign-in.html">Sign in</a>
                                         </p>

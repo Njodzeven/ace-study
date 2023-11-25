@@ -16,8 +16,10 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import ContactPage from "./pages/ContactPage";
 import UserProfile from "./pages/UserProfile";
-import SignIn from "./components/SignInOne";
-import SignUp from "./components/SignUpOne";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import StudyTipsOne from "./components/StudyTipsOne";
+import StudyTips from "./pages/StudyTips";
 
 function App() {
   useEffect(() => {
@@ -33,9 +35,9 @@ function App() {
     <BrowserRouter>
       <RouteScrollToTop />
       <Routes>
-        <Route exact path="/sign-up" element={<SignUp />} />
+        <Route exact path="/" element={<SignUp />} />
         <Route exact path="/sign-in" element={<SignIn />} />
-        <Route exact path="/" element={<HomeOne />} />
+        <Route exact path="/home" element={<HomeOne />} />
         <Route exact path="/index-2" element={<HomeTwo />} />
         <Route exact path="/index-3" element={<HomeThree />} />
         <Route exact path="/index-4" element={<HomeFour />} />
@@ -48,6 +50,7 @@ function App() {
         <Route exact path="/service-details" element={<ServiceDetailsPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
         <Route exact path="/user-profile" element={<UserProfile />} />
+        <Route exact path="/study-tips" element={<StudyTips />} />
       </Routes>
       <ScrollToTop smooth color="#41c1ef" />
     </BrowserRouter>

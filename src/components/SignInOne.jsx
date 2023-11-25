@@ -50,10 +50,10 @@ const SignInOne = () => {
 
                                 <p><a class="text-blue" href="#">Forgot Your Password?</a></p>
                                 </div>
-                                <Link to = "/">
+                                <Link to = "/home">
                                     <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign In</button>
                                 </Link>
-                                <Link to = "/SignUp">
+                                <Link to = "/">
                                     <p>Don't have an account yet ?
                                     <a class="text-blue" href="sign-up.html">Sign Up</a>
                                     </p>

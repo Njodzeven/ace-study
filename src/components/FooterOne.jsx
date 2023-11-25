@@ -16,12 +16,7 @@ const FooterOne = () => {
                     alt="Footer Logo"
                   />
                   <p>
-                    Conditions Terms of Use Ours feturesin Services ew Guests
-                    LisitThe Team List Guests LisitThe Team List
-                  </p>
-                  <Link className="db-btn-arrow" to="/about">
-                    Sign Up Now!! <i className="fa-solid fa-arrow-right" />
-                  </Link>
+                    Conditions Terms of Use Ours features</p>
                 </div>
               </div>
               <div className="col-xxl-12">

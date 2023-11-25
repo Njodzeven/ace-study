@@ -49,7 +49,7 @@ const HeaderOne = () => {
       <header className="header__area pos-abs plr-100">
         <div className="header__inner">
           <div className="header__logo">
-            <Link to="/">
+            <Link to="/home">
               <img src="/assets/imgs/logo/logo.png" alt="Site Logo" />
             </Link>
           </div>
@@ -57,10 +57,10 @@ const HeaderOne = () => {
             <nav className="main-menu">
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">Tips</Link>
+                  <Link to="/study-tips">Tips</Link>
                 </li>
                 <li>
                   <Link to="/service-details">Progress</Link>
@@ -117,10 +117,10 @@ const HeaderOne = () => {
             <nav className="offcanvas-navigation" id="offcanvas-navigation">
               <ul>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/home">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about">Tips</Link>
+                    <Link to="/study-tips">Tips</Link>
                   </li>
                   <li>
                     <Link to="/service-details">Progress</Link>
